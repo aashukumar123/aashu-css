@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height:100vh;
+            background-color: rgb(171, 169, 176);
+            border: 1px solid black;
+        }
+        .box{
+            width: 450px;
+            height: 150px;
+            background-color: green;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 50px;
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count:2;
+            animation-delay:1s;  /*suru kitne second se start hoga */
+            animation-timing-function:linear;
+          /*   animation-direction: alternate; /*alternate-reverse */
+             animation-fill-mode:forwards;/*stop in last postion in forward and stop in starting postion in first postion */
+            /* linear	The animation has the same speed from start to end	
+ease	Default value. The animation has a slow start, then fast, before it ends slowly	
+ease-in	The animation has a slow start	
+ease-out	The animation has a slow end	
+ease-in-out	The animation has both a slow start and a slow end	
+step-start	Equivalent to steps(1, start)	
+step-end	Equivalent to steps(1, end)	 */
+/* steps(int,start|end)	Specifies a stepping function, with two parameters. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value "end"	 */
+/* cubic-bezier(n,n,n,n)	Define your own values in the cubic-bezier function
+Possible values are numeric values from 0 to 1	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element */
+
+        }
+        @keyframes rightMovement{
+            from{top: 0;
+                left: 0;
+
+            }
+            to{
+                top: 0;
+                left: 1200px;
+
+            }
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>

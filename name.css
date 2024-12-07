@@ -1,0 +1,53 @@
+li{
+    font-weight: 900;
+}
+.html{
+    color: brown;
+}
+.css{
+    color: red;
+}
+.javasrcipt{
+    color:pink;
+
+}
+.react{
+    color:blue;
+}
+.tailwind{
+    color:black;
+}
+#html{
+    font-size: 32px;
+}
+#CSS{
+    font-size: 32px;
+}
+#javasrcipt
+{
+    font-size: 32px;
+}
+#react{
+    font-size:32px
+}
+#tailwind{
+    font-size:32px
+}
+[class]{
+    background-color: blue;
+}
+[aashu="look"]{
+    background-color: brown;
+}
+[aashu="kaam"]{
+    font-size: 32px;
+}
+.web p{
+    background-color: aqua;
+}
+h1:hover{
+   background-color: rgb(42, 165, 81);
+}
+[aashu="kaam"]:hover{
+    color:orangered;
+}

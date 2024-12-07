@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    background-color: aquamarine;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.box1{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+ @media (max-width:600px) /*it is just a view of user in phone laptop        and desktop to chnage by media query */
+{
+    .container{
+        flex-direction: column;
+        background-color: aliceblue;
+
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <p>text1</p>
+            <p>text2</p>
+        </div>
+        <div class="box2">
+            <img src="one.jpg" alt="hello">
+        </div>
+    </div>
+</body>
+</html>

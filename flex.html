@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            margin: 10px;
+            background-color: aquamarine;
+            margin: 2px;
+            padding: 2px;
+            height: 1000px;
+            /* display: flex; flex gradually take  item in row form */
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+             flex-direction: row; 
+            
+            /* flex-wrap: wrap; this is used in phone and when u inspect and they can squej when give width full fill
+         */
+         /*flex-wrap: wrap;  this used in phone and it is not squej when u inspect 
+         wrap,nowrap,reverse*/
+         /* flex-wrap: wrap-reverse; move box in a random way when u wrap and kabhi upper jayega and kabhi nichhe  */
+          /* flex-flow: row-reverse wrap-reverse;  flex-direction and flex wrap both in flex flow; */
+           justify-content: start; /* you can use with flew-direction :row and column in row cases justify-content: is centre the item according to horizontal and in case of column justify content in centre according to vertical; */
+           /* center,space-round,space-evenly,space-between */
+            align-items:start ; /*this is work with flex-direction: row and column in case of row align-items: centre  the item is verticaly place and in case og cloumn horizontal;; it work in cross axies
+            for example flex-start,flex-end,centre,strech when remove height*/
+            /* we use justify-content: center and align-items: centre is palce middle if web page;; */
+             align-content:start ;/* it is used to remove spaces between the boxes   when flex-direction: row;flex-wrap:wrap,justify-content:start,aligment-item:start; so there is space beteen box u can remove align-content:start;
+             for example start,end,centre,space-between,space-around,space evenly*/
+             /* flex-item property is flex-shrink:4 shrink jaldi hoga compare to another box,flex-grow:6 width jaldi se expand ho jaayega compare to another box,flex-bases:200px equal to width ye use tab karna tab item(data) hoga box main and off the flex- wrap
+             and order:1 is use to move a box the place u want to put */
+             /* align-self: centre; move a box centre in verticall when felx direction is row and in column horizontal,in start,end 
+             box main data bhi ho (kuch likha ho) */
+             /* all flex-item used in child of parent container */
+             
+
+        }  
+        .box{
+            /* width: 200px;
+            height: 200px; */
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+           
+
+
+        }
+        #box1{
+            background-color: bisque;
+        }
+        #box2{
+            background-color: blueviolet;
+            align-self: center;
+        }
+        #box3{
+            background-color: yellow;
+            flex-grow: 6;
+        }
+        #box4{
+            background-color: pink;
+            flex-shrink: 4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+            <div class="box" id="box1">ggdg</div>
+            <div class="box" id="box2">ddv</div>
+            <div class="box" id="box3">sddc</div>
+            <div class="box" id="box4">hello</div>
+        
+    </div>
+    
+</body>
+</html>
